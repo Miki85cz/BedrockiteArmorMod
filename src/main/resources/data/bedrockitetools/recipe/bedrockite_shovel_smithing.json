@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "bedrockite:bedrockite_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_shovel"
+  },
+  "addition": {
+    "item": "bedrockite:bedrockite_ingot"
+  },
+  "result": {
+    "id": "bedrockitetools:bedrockite_shovel"
+  }
+}
