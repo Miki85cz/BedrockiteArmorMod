@@ -3,38 +3,38 @@ loaderVersion="[4,)"
 license="Apache-2.0 license http://www.apache.org/licenses/LICENSE-2.0"
 
 [[mods]]
-modId="bedrockitetools"
+modId="bedrockitearmor"
 version="1.5.0-alpha"
 displayName="Bedrockite Tools"
-displayURL="https://github.com/Miki85cz/BedrockiteToolsMod"
+displayURL="https://github.com/Miki85cz/bedrockitearmorMod"
 authors="§a§lMiki85cz"
 
 description='''
 §rThis mod is an addon for §bBedrockite §r that makes all the tools upgradeable to Bedrockite
 
-§6If you find any issue please report it! https://github.com/Miki85cz/BedrockiteToolsMod/issues
+§6If you find any issue please report it! https://github.com/Miki85cz/bedrockitearmorMod/issues
 '''
 
-logoFile="bedrockitetools.png"
+logoFile="bedrockitearmor.png"
 
 [[mixins]]
-config="bedrockitetools.mixins.json"
+config="bedrockitearmor.mixins.json"
 
-[[dependencies.bedrockitetools]]
+[[dependencies.bedrockitearmor]]
     modId="neoforge"
     type="required"
     versionRange="[21.0.1,)"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.bedrockitetools]]
+[[dependencies.bedrockitearmor]]
     modId="minecraft"
     type="required"
     versionRange="[1.21, 1.21.2)"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.bedrockitetools]]
+[[dependencies.bedrockitearmor]]
     modId="bedrockite"
     type="required"
     versionRange="[1.4.8-beta, 1.5.1-beta]"
