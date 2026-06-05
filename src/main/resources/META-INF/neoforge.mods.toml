@@ -10,7 +10,7 @@ displayURL="https://github.com/Miki85cz/BedrockiteToolsMod"
 authors="§a§lMiki85cz"
 
 description='''
-§rThis mod is an addon for §dBedrockite §r that makes all the tools upgradeable to Bedrockite
+§rThis mod is an addon for §bBedrockite §r that makes all the tools upgradeable to Bedrockite
 
 §6If you find any issue please report it! https://github.com/Miki85cz/BedrockiteToolsMod/issues
 '''
@@ -37,6 +37,6 @@ config="bedrockitetools.mixins.json"
 [[dependencies.bedrockitetools]]
     modId="bedrockite"
     type="required"
-    versionRange="[1.4.8-beta, 1.5.0-beta]"
+    versionRange="[1.4.8-beta, 1.5.0-beta, 1.5.1-beta]"
     ordering="AFTER"
     side="BOTH"
