@@ -15,7 +15,7 @@ description='''
 §6If you find any issue please report it! https://github.com/Miki85cz/BedrockiteToolsMod/issues
 '''
 
-logoFile="logo.png"
+logoFile="bedrockitetools.png"
 
 [[mixins]]
 config="bedrockitetools.mixins.json"
