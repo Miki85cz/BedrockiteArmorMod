@@ -4,12 +4,12 @@
     "item": "bedrockite:bedrockite_ingot"
   },
   "base": {
-    "item": "minecraft:netherite_hoe"
+    "item": "minecraft:netherite_chestplate"
   },
   "addition": {
     "item": "bedrockite:bedrockite_ingot"
   },
   "result": {
-    "id": "bedrockitetools:bedrockite_hoe"
+    "id": "bedrockitearmor:bedrockite_chestplate"
   }
 }

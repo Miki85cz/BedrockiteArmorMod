@@ -4,12 +4,12 @@
     "item": "bedrockite:bedrockite_ingot"
   },
   "base": {
-    "item": "minecraft:netherite_sword"
+    "item": "minecraft:netherite_helmet"
   },
   "addition": {
     "item": "bedrockite:bedrockite_ingot"
   },
   "result": {
-    "id": "bedrockitetools:bedrockite_sword"
+    "id": "bedrockitearmor:bedrockite_helmet"
   }
 }

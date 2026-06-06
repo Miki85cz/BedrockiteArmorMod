@@ -4,12 +4,12 @@
     "item": "bedrockite:bedrockite_ingot"
   },
   "base": {
-    "item": "minecraft:netherite_axe"
+    "item": "minecraft:netherite_boots"
   },
   "addition": {
     "item": "bedrockite:bedrockite_ingot"
   },
   "result": {
-    "id": "bedrockitetools:bedrockite_axe"
+    "id": "bedrockitearmor:bedrockite_boots"
   }
 }

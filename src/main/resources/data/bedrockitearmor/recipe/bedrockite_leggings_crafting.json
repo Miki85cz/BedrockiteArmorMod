@@ -2,20 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "a",
-    "b",
-    "b"
+    "aaa",
+    "a a",
+    "a a"
   ],
   "key": {
     "a": {
       "item": "bedrockite:bedrockite_ingot"
-    },
-    "b": {
-      "item": "minecraft:stick"
     }
   },
   "result": {
-    "id": "bedrockitetools:bedrockite_shovel",
+    "id": "bedrockitearmor:bedrockite_leggings",
     "count": 1
   }
 }

@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import net.neoforged.neoforge.network.handling.IPayloadHandler;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.fml.util.thread.SidedThreadGroups;
@@ -13,6 +14,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.IEventBus;
 
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.server.TickTask;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
@@ -28,25 +30,28 @@ import java.util.Comparator;
 import it.unimi.dsi.fastutil.ints.IntObjectPair;
 import it.unimi.dsi.fastutil.ints.IntObjectImmutablePair;
 
-import com.miki.bedrockitearmor.init.BedrockitearmorModItems;
+import com.miki.bedrockitearmor.init.BedrockiteArmorModItems;
 
 @Mod("bedrockitearmor")
-public class BedrockitearmorMod {
-	public static final Logger LOGGER = LogManager.getLogger(BedrockitearmorMod.class);
+public class BedrockiteArmorMod {
+	public static final Logger LOGGER = LogManager.getLogger(BedrockiteArmorMod.class);
 	public static final String MODID = "bedrockitearmor";
 
-	public BedrockitearmorMod(IEventBus modEventBus) {
-		// Start of user code block mod constructor
-		// End of user code block mod constructor
-		NeoForge.EVENT_BUS.register(this);
-		modEventBus.addListener(this::registerNetworking);
-		BedrockitearmorModItems.REGISTRY.register(modEventBus);
-		// Start of user code block mod init
-		// End of user code block mod init
-	}
+    public BedrockiteArmorMod(IEventBus modEventBus) {
+        NeoForge.EVENT_BUS.register(this);
+        modEventBus.addListener(this::registerNetworking);
+        BedrockiteArmorModItems.REGISTRY.register(modEventBus);
 
-	// Start of user code block mod methods
-	// End of user code block mod methods
+        modEventBus.addListener(BuildCreativeModeTabContentsEvent.class, event -> {
+            if (event.getTabKey().location().toString().equals("bedrockite:bedrockite")) {
+                event.accept(new ItemStack(BedrockiteArmorModItems.BEDROCKITE_HELMET.get()));
+                event.accept(new ItemStack(BedrockiteArmorModItems.BEDROCKITE_CHESTPLATE.get()));
+                event.accept(new ItemStack(BedrockiteArmorModItems.BEDROCKITE_LEGGINGS.get()));
+                event.accept(new ItemStack(BedrockiteArmorModItems.BEDROCKITE_BOOTS.get()));
+            }
+        });
+    }
+
 	private static boolean networkingRegistered = false;
 	private static final Map<CustomPacketPayload.Type<?>, NetworkMessage<?>> MESSAGES = new HashMap<>();
 

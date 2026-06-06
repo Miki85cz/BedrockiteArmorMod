@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bedrockite:bedrockite_axe_crafting"
+        "recipe": "bedrockitearmor:bedrockite_helmet_crafting"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "bedrockite:bedrockite_axe_crafting"
+      "bedrockitearmor:bedrockite_helmet_crafting"
     ]
   }
 }

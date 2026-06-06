@@ -2,20 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "a",
-    "a",
-    "b"
+    "a a",
+    "a a"
   ],
   "key": {
     "a": {
       "item": "bedrockite:bedrockite_ingot"
-    },
-    "b": {
-      "item": "minecraft:stick"
     }
   },
   "result": {
-    "id": "bedrockitetools:bedrockite_sword",
+    "id": "bedrockitearmor:bedrockite_boots",
     "count": 1
   }
 }
