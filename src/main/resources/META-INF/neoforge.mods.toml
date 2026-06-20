@@ -4,7 +4,7 @@ license="Apache-2.0 license http://www.apache.org/licenses/LICENSE-2.0"
 
 [[mods]]
 modId="bedrockitearmor"
-version="1.5.0-alpha"
+version="1.6.0-alpha"
 displayName="Bedrockite Armor"
 displayURL="https://github.com/Miki85cz/bedrockitearmorMod"
 authors="§a§lMiki85cz"
@@ -37,6 +37,6 @@ config="bedrockitearmor.mixins.json"
 [[dependencies.bedrockitearmor]]
     modId="bedrockite"
     type="required"
-    versionRange="[1.4.8-beta, 1.5.1-beta]"
+    versionRange="[1.6.0-beta, 1.6.1-beta]"
     ordering="AFTER"
     side="BOTH"

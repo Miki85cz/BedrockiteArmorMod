@@ -1,0 +1,47 @@
+{
+  "parent": "bedrockite:get_bedrockite_ingot",
+  "display": {
+    "icon": {
+      "id": "bedrockitearmor:bedrockite_chestplate"
+    },
+    "title": {
+      "text": "Cover me in Bedrockite"
+    },
+    "description": {
+      "text": "Equip a full set of Bedrockite Armor"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wearing_full_set": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "armor.head": {
+                  "items": ["bedrockitearmor:bedrockite_helmet"]
+                },
+                "armor.chest": {
+                  "items": ["bedrockitearmor:bedrockite_chestplate"]
+                },
+                "armor.legs": {
+                  "items": ["bedrockitearmor:bedrockite_leggings"]
+                },
+                "armor.feet": {
+                  "items": ["bedrockitearmor:bedrockite_boots"]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

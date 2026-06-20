@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bedrockite:bedrockite_helmet",
+    "bedrockite:bedrockite_chestplate",
+    "bedrockite:bedrockite_leggings",
+    "bedrockite:bedrockite_boots"
+  ]
+}
